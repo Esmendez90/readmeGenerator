@@ -4,16 +4,23 @@ function renderLicenseBadge(license) {
     // and a notice is added to the section of the README entitled 
     // License that explains which license the application is covered 
     // under
-    if(data.license){
-      
-    }
-  // If there is no license, return an empty string
-    return "";
+    
+
+
+    
+    // If there is no license, return an empty string
+    
   }
+  
   
   // TODO: Create a function that returns the license link
   // If there is no license, return an empty string
-  function renderLicenseLink(license) {}
+  function renderLicenseLink(license) {
+  //   if(data.license === true){
+  //     console.log(`https://img.shileds.io/badge/license-${data.license}-blue.svg`);
+  //   }
+  //   return "";
+   }
   
   // TODO: Create a function that returns the license section of README
   // If there is no license, return an empty string
@@ -22,6 +29,9 @@ function renderLicenseBadge(license) {
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
+
+    <img src="https://img.shields.io/apm/l/${data.title}?style=plastic"/>
+    
   
   ## User Story
   ${data.userStory} 
@@ -62,4 +72,6 @@ function renderLicenseBadge(license) {
   }
   
   module.exports = generateMarkdown;
+ 
+  
   

@@ -1,7 +1,10 @@
-# weather dashboard
+# npm
+
+    <img src="https://img.shields.io/apm/l/npm?style=plastic"/>
+    
   
   ## User Story
-  about the weather 
+  js 
   
   ## Table of Content
   
@@ -14,25 +17,25 @@
   * [Questions](#questions)
   
   ## Description
-  its cool
+  js
   
   ## Installation
-  init -y
+  js
   
   ## Usage 
-  n/a
+  js
   
   ## License
   MIT
   
   ## Contributing
-  n/a
+  js
   
   ## Tests
-  run
+  js
   
   ## Questions
   For questions, please contacte me:
-  * [esmendez90] (https://github.com/esmendez90)
-  * Email: esmendezn@gmail.com
+  * [s] (https://github.com/s)
+  * Email: d
   
