@@ -29,9 +29,6 @@ function renderLicenseBadge(license) {
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
-
-    <img src="https://img.shields.io/apm/l/${data.title}?style=plastic"/>
-    
   
   ## User Story
   ${data.userStory} 

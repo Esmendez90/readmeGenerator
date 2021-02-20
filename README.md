@@ -1,10 +1,10 @@
-# npm
+# ReadMe Generator
 
-    <img src="https://img.shields.io/apm/l/npm?style=plastic"/>
+    
     
   
   ## User Story
-  js 
+  As a developer, I want to spend most of my time writting code and not as much time writing a readme file. 
   
   ## Table of Content
   
@@ -17,25 +17,25 @@
   * [Questions](#questions)
   
   ## Description
-  js
+  The generator allows users to creat a proffesional ReadMe file in a short time.
   
   ## Installation
-  js
+  init -y
   
   ## Usage 
-  js
+  It is an open source project.
   
   ## License
   MIT
   
   ## Contributing
-  js
+  Contact me for questions.
   
   ## Tests
-  js
+  npm run test
   
   ## Questions
   For questions, please contacte me:
-  * [s] (https://github.com/s)
-  * Email: d
+  * [esmendez90] (https://github.com/esmendez90)
+  * Email: edmendezn@gmail.com
   
