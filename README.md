@@ -1,7 +1,7 @@
 # ReadMe Generator
   
   ## User Story
-  As a developer, I want to spend less time writing a ReadMe and more time writing code. 
+  As a developer I want to creat a ReadMe in a short time 
   
   ## Table of Content
   
@@ -14,25 +14,25 @@
   * [Questions](#questions)
   
   ## Description
-  ReadMe generator allows the user to creat a proffesional ReadMe file in a short time.
+  Allows the user to create a ReadMe file
   
   ## Installation
   init -y
   
   ## Usage 
-  It is an open project.
+  n/a
   
   ## License
   MIT
   
   ## Contributing
-  Contact me for questions.
+  It is a free project
   
   ## Tests
-  n/a
+  n/s
   
   ## Questions
   For questions, please contacte me:
   * [esmendez90] (https://github.com/esmendez90)
-  * Email: edmendez90@gmail.com
+  * Email: edmendezn@gmail.com
   

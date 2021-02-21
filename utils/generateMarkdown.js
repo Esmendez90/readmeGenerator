@@ -38,6 +38,7 @@ function renderLicenseBadge(license) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Video](#video)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
@@ -51,6 +52,9 @@ function renderLicenseBadge(license) {
   
   ## Usage 
   ${answers.usage}
+
+  ## Video
+  <https://youtu.be/A4YMhIymC6I>
   
   ## License
   ${answers.license}
