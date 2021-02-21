@@ -1,35 +1,39 @@
-# ReadMe Generator
+# README Generator
   
   ## User Story
-  As a developer I want to creat a ReadMe in a short time 
+  As a developer, I want to spend less time writing a ReadMe file and more time writing code. 
   
   ## Table of Content
   
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Video](#video)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
   ## Description
-  Allows the user to create a ReadMe file
+  This generator allows the user to dinamically create a ReadMe file by answering the prompts. Upon answering all the questions, a professional ReadMe is created.
   
   ## Installation
   init -y
   
   ## Usage 
-  n/a
+  Contact me for questions.
+
+  ## Video
+  <https://youtu.be/A4YMhIymC6I>
   
   ## License
   MIT
   
   ## Contributing
-  It is a free project
+  This is an open source project.
   
   ## Tests
-  n/s
+  n/a
   
   ## Questions
   For questions, please contacte me:
