@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const axios = require("axios");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -79,19 +78,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, function (err) {
+function writeToFile(fileName, answers) {
+  fs.writeFile(fileName, answers, function (err) {
     console.log(fileName),
-      console.log(data),
+      console.log(answers),
       err ? console.error(err) : console.log("Written to file...");
   });
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((data) => {
-    writeToFile("README.md", generateMarkdown(data));
-    console.log(data);
+  inquirer.prompt(questions).then((answers) => {
+    writeToFile("README.md", generateMarkdown(answers));
+    console.log(answers);
   });
 }
 

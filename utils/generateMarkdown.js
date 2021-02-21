@@ -16,8 +16,8 @@ function renderLicenseBadge(license) {
   // TODO: Create a function that returns the license link
   // If there is no license, return an empty string
   function renderLicenseLink(license) {
-  //   if(data.license === true){
-  //     console.log(`https://img.shileds.io/badge/license-${data.license}-blue.svg`);
+  //   if(answers.license === true){
+  //     console.log(`https://img.shileds.io/badge/license-${answers.license}-blue.svg`);
   //   }
   //   return "";
    }
@@ -27,11 +27,11 @@ function renderLicenseBadge(license) {
   function renderLicenseSection(license) {}
   
   // TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {
-    return `# ${data.title}
+  function generateMarkdown(answers) {
+    return `# ${answers.title}
   
   ## User Story
-  ${data.userStory} 
+  ${answers.userStory} 
   
   ## Table of Content
   
@@ -44,27 +44,27 @@ function renderLicenseBadge(license) {
   * [Questions](#questions)
   
   ## Description
-  ${data.description}
+  ${answers.description}
   
   ## Installation
-  ${data.installation}
+  ${answers.installation}
   
   ## Usage 
-  ${data.usage}
+  ${answers.usage}
   
   ## License
-  ${data.license}
+  ${answers.license}
   
   ## Contributing
-  ${data.contributing}
+  ${answers.contributing}
   
   ## Tests
-  ${data.tests}
+  ${answers.tests}
   
   ## Questions
   For questions, please contacte me:
-  * [${data.username}] (https://github.com/${data.username})
-  * Email: ${data.email}
+  * [${answers.username}] (https://github.com/${answers.username})
+  * Email: ${answers.email}
   `;
   }
   
