@@ -17,13 +17,13 @@
   * [Questions](#questions)
   
   ## Description
-  Given a command-line application that accepts user input, when the user is prompted for information about the their project, then a high-quality, professional README.md is generated. The user will answer questions for title, username, email, installation, license, contribution, tests, and questions. Once all prompts are answered, then a professional README is created.
+  Given a command-line application that accepts user input, when I am prompted for information about my application repository, then a high-quality, professional README.md is generated with the following sections: title, license, user story, description, installation, usage, contributions, tests, and questions. Upon answering all the prompts about my repository then a professional README is generated.
   
   ## Installation
   init -y
   
   ## Usage 
-  My projects are open source projects. Please, contact me for any questions.
+  n/a
 
   ## Video
   <https://youtu.be/A4YMhIymC6I>
@@ -32,7 +32,7 @@
   MIT
   
   ## Contributing
-  Open source projects
+  My projects are open source. Anyone can contribute. Please, contact me for questions.
   
   ## Tests
   n/a

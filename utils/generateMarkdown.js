@@ -4,17 +4,18 @@
 // License that explains which license the application is covered 
 // under
 
-function renderLicenseBadge(license) {
+function renderLicenseBadge(license, color) {
 
-
-    let renderLicense = renderLicenseLink(license);
+    let renderLicense = renderLicenseLink(license, color);
     let licenseBadge = `![license](${renderLicense})`;
     return licenseBadge;
+  
   }
+
   // TODO: Create a function that returns the license link
   // If there is no license, return an empty string
-  function renderLicenseLink(license) {
-    let badgeURL = `https://img.shields.io/badge/license-${license}-green`;
+  function renderLicenseLink(license, color) {
+    let badgeURL = `https://img.shields.io/badge/license-${license}-${color}`;
     return badgeURL;
   }
   
@@ -32,7 +33,7 @@ function renderLicenseBadge(license) {
   function generateMarkdown(answers) {
     return `# ${answers.title}
 
-  ${renderLicenseBadge(answers.license)}  
+  ${renderLicenseBadge(answers.license, answers.color)}  
 
   ## User Story
   ${answers.userStory} 

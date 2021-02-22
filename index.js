@@ -62,7 +62,14 @@ const questions = [
     type: "list",
     message: "What kind of license should your project have? (Use arrow keys)",
     name: "license",
-    choices: ["MIT", "APACHE 2.0", "BSD 3", "GPL 3.0", "None"],
+    choices: ["MIT", "APACHE", "APACHE 2", "BSD", "GPL", "None"],
+    
+  },
+  {
+    type: "list",
+    message: "License color? (Use arrow keys)",
+    name: "color",
+    choices: ["green", "blue", "lightgrey", "yellow", "9cf", "None"],
     
   },
   {
