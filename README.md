@@ -1,7 +1,9 @@
 # README Generator
-  
+
+  ![license](https://img.shields.io/badge/license-MIT-green)  
+
   ## User Story
-  As a developer, I want to spend less time writing a ReadMe file and more time writing code. 
+  As a developer, I want a README generator so that I can quickly create a professional README for a new project. This will allow me to spend more time writing code for my project. 
   
   ## Table of Content
   
@@ -15,13 +17,13 @@
   * [Questions](#questions)
   
   ## Description
-  This generator allows the user to dinamically create a ReadMe file by answering the prompts. Upon answering all the questions, a professional ReadMe is created.
+  Given a command-line application that accepts user input, when the user is prompted for information about the their project, then a high-quality, professional README.md is generated. The user will answer questions for title, username, email, installation, license, contribution, tests, and questions. Once all prompts are answered, then a professional README is created.
   
   ## Installation
   init -y
   
   ## Usage 
-  Contact me for questions.
+  My projects are open source projects. Please, contact me for any questions.
 
   ## Video
   <https://youtu.be/A4YMhIymC6I>
@@ -30,7 +32,7 @@
   MIT
   
   ## Contributing
-  This is an open source project.
+  Open source projects
   
   ## Tests
   n/a
