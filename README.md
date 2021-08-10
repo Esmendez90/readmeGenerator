@@ -1,9 +1,9 @@
-# README Generator
+# JCB estate
 
-  ![license](https://img.shields.io/badge/license-MIT-green)  
+  ![license](https://img.shields.io/badge/license-APACHE 2-lightgrey)  
 
   ## User Story
-  As a developer, I want a README generator so that I can quickly create a professional README for a new project. This will allow me to spend more time writing code for my project. 
+  something 
   
   ## Table of Content
   
@@ -17,28 +17,28 @@
   * [Questions](#questions)
   
   ## Description
-  Given a command-line application that accepts user input, when I am prompted for information about my application repository, then a high-quality, professional README.md is generated with the following sections: title, license, user story, description, installation, usage, contributions, tests, and questions. Upon answering all the prompts about my repository then a professional README is generated.
+  hello
   
   ## Installation
-  init -y
+  lshkfd
   
   ## Usage 
-  n/a
+  lsjdklfjd
 
   ## Video
   <https://youtu.be/A4YMhIymC6I>
   
   ## License
-  MIT
+  APACHE 2
   
   ## Contributing
-  My projects are open source. Anyone can contribute. Please, contact me for questions.
+  sdlfd
   
   ## Tests
-  n/a
+  dsf
   
   ## Questions
   For questions, please contacte me:
-  * [esmendez90] (https://github.com/esmendez90)
+  * [esmendez] (https://github.com/esmendez)
   * Email: edmendezn@gmail.com
   

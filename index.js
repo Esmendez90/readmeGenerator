@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");'/'
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -9,85 +9,96 @@ const questions = [
     type: "input",
     message: "What is your GitHub username?",
     name: "username",
-    validate: (answer) => {
-      if (answer.length < 1) {
-        return console.log("Enter a valid username");
-      }
-      return true;
-    },
+    validate: (answer) =>
+      answer.length < 2 ? console.log("Enter a valid username") : true,
   },
   {
     type: "input",
     message: "What is your email address?",
     name: "email",
-    validate: (answer) => {
-      if (answer.length < 1) {
-        return console.log("Enter a valid email address");
-      }
-      return true;
-    },
+    validate: (answer) =>
+      answer.length < 2 ? console.log("Enter a valid username") : true,
   },
   {
     type: "input",
     message: "What is your project's title?",
     name: "title",
-    validate: (answer) => {
-      if (answer.length < 1) {
-        return console.log("Enter a valid title");
-      }
-      return true;
-    },
+    validate: (answer) =>
+      answer.length < 2 ? console.log("Enter a valid username") : true,
   },
   {
-    type: "input",
-    message: "What is your user story?",
+    type: "confirm",
+    message: "Do you want to add a user story?",
     name: "userStory",
   },
   {
     type: "input",
-    message: "Please, write a short description of your project",
+    message: "Enter user story",
+    name: "story",
+    when: (answers) => answers.userStory === true,
+  },
+  {
+    type: "confirm",
+    message: "Do you want to add a description?",
     name: "description",
   },
   {
     type: "input",
-    message: "What command should be run to install dependencies?",
-    name: "installation",
+    message: "Enter description",
+    name: "project_description",
+    when: (answers) => answers.description === true,
+  },
+  {
+    type: "confirm",
+    message: "Do you want to add a requirements field?",
+    name: "requirements",
   },
   {
     type: "input",
-    message: "What does the user need to know about using the repo?",
-    name: "usage",
+    message: "Add requirements",
+    name: "project_requirements",
+    when: (answers) => answers.requirements === true,
   },
   {
-    type: "list",
-    message: "What kind of license should your project have? (Use arrow keys)",
+    type: "confirm",
+    message: "Do you want to add a license?",
     name: "license",
-    choices: ["MIT", "APACHE", "APACHE 2", "BSD", "GPL", "None"],
-    
-  },
-  {
-    type: "list",
-    message: "License color? (Use arrow keys)",
-    name: "color",
-    choices: ["green", "blue", "lightgrey", "yellow", "9cf", "None"],
-    
   },
   {
     type: "input",
-    message: "What does the user need to know about contributing to the repo?",
-    name: "contributing",
+    message: "Enter license name",
+    name: "license_name",
+    when: (answers) => answers.license === true,
+  },
+  {
+    type: "confirm",
+    message: "Do you want to add a link to your application",
+    name: "link",
   },
   {
     type: "input",
-    message: "What command should be run to run tests?",
-    name: "tests",
+    message: "Enter link to application",
+    name: "app_link",
+    when: (answers) => answers.link === true,
+  },
+  {
+    type: "input",
+    message: "What tools did you use to build this project",
+    name: "tools",
   },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, answers) {
-  fs.writeFile(fileName, answers, function (err) {
-    console.log(fileName),
+// function writeToFile(fileName, answers) {
+//   fs.writeFile(fileName, answers, function (err) {
+//     console.log(fileName),
+//       console.log(answers),
+//       err ? console.error(err) : console.log("Written to file...");
+//   });
+// }
+
+function writeToFile(answers) {
+  fs.writeFile("README.md", answers, function (err) {
       console.log(answers),
       err ? console.error(err) : console.log("Written to file...");
   });
@@ -96,8 +107,10 @@ function writeToFile(fileName, answers) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    writeToFile("README.md", generateMarkdown(answers));
     console.log(answers);
+    writeToFile(answers);
+  
+    //writeToFile("README.md", generateMarkdown(answers));
   });
 }
 
