@@ -9,6 +9,7 @@ const questions = [
     type: "input",
     message: "What is your GitHub username?",
     name: "username",
+    default: "edmendez90",
     validate: (answer) =>
       answer.length < 2 ? console.log("Enter a valid username") : true,
   },
@@ -16,6 +17,7 @@ const questions = [
     type: "input",
     message: "What is your email address?",
     name: "email",
+    default: "edmendezn@gmail.com",
     validate: (answer) =>
       answer.length < 2 ? console.log("Enter a valid username") : true,
   },
@@ -53,10 +55,25 @@ const questions = [
     when: (answers) => answers.license === true,
   },
   {
+    type: "input",
+    message: "Enter current year",
+    name: "year",
+    when: (answers) => answers.license === true,
+    validate: (answers) =>
+      answers.length === 4 ? true : console.log("Enter a valid year"),
+  },
+  {
     type: "list",
     message: "Enter badge color",
     name: "badge_color",
     choices: ["blue", "green", "red", "yellow"],
+    when: (answers) => answers.license === true,
+  },
+  {
+    type: "input",
+    message: "Enter your full name",
+    name: "full_name",
+    default: "Esteban Mendez",
     when: (answers) => answers.license === true,
   },
   {
@@ -72,19 +89,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, answers) {
-//   fs.writeFile(fileName, answers, function (err) {
-//     console.log(fileName),
-//       console.log(answers),
-//       err ? console.error(err) : console.log("Written to file...");
-//   });
-// }
-
 function writeToFile(answers) {
   //const { username, email, title } = answers;
   fs.writeFile("README.md", generateMarkdown(answers), (err) =>
     err ? console.error(err) : console.log("Written to file...")
-  ); 
+  );
 }
 
 // TODO: Create a function to initialize app
@@ -92,8 +101,6 @@ function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log(answers);
     writeToFile(answers);
-
-    //writeToFile("README.md", generateMarkdown(answers));
   });
 }
 

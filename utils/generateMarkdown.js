@@ -1,9 +1,4 @@
 const fs = require("fs");
-// If I choose a license for my application from the list of options
-// then a badge for that license is added near the top on the README
-// and a notice is added to the section of the README entitled
-// License that explains which license the application is covered
-// under
 
 function renderLicenseBadge(license_name, badge_color) {
   let renderLicense = renderLicenseLink(license_name, badge_color);
@@ -12,7 +7,6 @@ function renderLicenseBadge(license_name, badge_color) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license_name, badge_color) {
   let badgeURL = `https://img.shields.io/badge/license-${license_name}-${badge_color}`;
   return badgeURL;
@@ -20,7 +14,13 @@ function renderLicenseLink(license_name, badge_color) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license, license_name, badge_color) {
+function renderLicenseSection(
+  license,
+  license_name,
+  badge_color,
+  year,
+  full_name
+) {
   let section;
   if (license) {
     section = renderLicenseBadge(license_name, badge_color);
@@ -28,7 +28,7 @@ function renderLicenseSection(license, license_name, badge_color) {
       "License.txt",
       `MIT License
 
-    Copyright (c) [year] [fullname]
+    Copyright (c) ${year} ${full_name}
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -62,7 +62,9 @@ function generateMarkdown(answers) {
   return `# ${answers.title} ${renderLicenseSection(
     answers.license,
     answers.license_name,
-    answers.badge_color
+    answers.badge_color,
+    answers.year,
+    answers.full_name
   )}
   
   ## User Story
@@ -72,7 +74,6 @@ function generateMarkdown(answers) {
   
   * [Description](#description)
   * [Requirements](#requirements)
-  * [License](#license)
   * [Link-To-Application](#link-to-application)
   * [Tools](#tools)
   * [Questions](#questions)
@@ -82,9 +83,6 @@ function generateMarkdown(answers) {
 
   ## Requirements
   ${answers.project_requirements}
-  
-  ## License
-  ${answers.license_name}
 
   ## Link To Application
   ${answers.app_link}

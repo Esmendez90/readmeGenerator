@@ -1,34 +1,30 @@
-# es ![license](https://img.shields.io/badge/license-mit-blue)
+# ReadMe Generator ![license](https://img.shields.io/badge/license-MIT-green)
   
   ## User Story
-  es 
+  As a web developer, I want to spend most of time working on a project than writing a readMe for the project. This readme generator will allow me achieve that, by dinamycally generating a ReadMe for my project.  
   
   ## Table of Content
   
   * [Description](#description)
   * [Requirements](#requirements)
-  * [License](#license)
   * [Link-To-Application](#link-to-application)
   * [Tools](#tools)
   * [Questions](#questions)
   
   ## Description
-  elkf
+  Answer each prompt and the readme gets dinamycally created.
 
   ## Requirements
-  lkjd
-  
-  ## License
-  mit
+  node js, npm packages.
 
   ## Link To Application
-  none
+  N/A
 
   ## Tools
-  none
+  VS Code, NPM Packages, Node js. 
 
   ## Questions
   For questions, please contacte me:
-  * [es] (https://github.com/es)
-  * Email: es
+  * [edmendez90] (https://github.com/edmendez90)
+  * Email: edmendezn@gmail.com
   
